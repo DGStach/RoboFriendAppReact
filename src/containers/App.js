@@ -1,31 +1,25 @@
-import React, {Component} from "react";
+import React, { useState, useEffect} from "react";
 import CardList from "../component/CardList";
 import SearchBox from "../component/SearchBox";
 import Scroll from "../component/Scroll";
 import ErrorBoundary from "../component/ErrorBoundary";
 
-class App extends Component {
-    constructor() {
-        super()
-        this.state = {
-            robots: [],
-            searchfield: ''
-        }
-    }
+function App() {
 
-    onSearchChange = (event) => {
-        this.setState({searchfield: event.target.value})
-    }
+    const [robots, setRobots] = useState([])
+    const [searchfield, setsearchfield] = useState('')
+    const [count, setCount] = useState(0)
 
-    componentDidMount() {
+    useEffect(()=>{
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
-            .then(users => this.setState({robots: users}))
-    };
+            .then(users => setRobots(users))
+    }, [count])
+    const onSearchChange = (event) => {
+        setsearchfield(event.target.value)
+    }
 
-    render() {
-        const {robots, searchfield} = this.state
-        const filteredRobots = robots.filter(robot => {
+     const filteredRobots = robots.filter(robot => {
             return robot.name.toLowerCase().includes(searchfield.toLowerCase())
         });
 
@@ -34,7 +28,11 @@ class App extends Component {
             (
                 <div className='tc'>
                     <h1 className='f1'>RoboFriends</h1>
-                    <SearchBox searchChange={this.onSearchChange}/>
+                    <button
+                        className= 'pa3 ba--green bg-lightest-blue'
+                        onClick={() =>setCount(count+1)}>Download!</button>
+                    <h3>Download all active users from server</h3>
+                    <SearchBox searchChange={onSearchChange}/>
                     <Scroll>
                         <ErrorBoundary >
                             <CardList robots={filteredRobots}/>
@@ -42,7 +40,6 @@ class App extends Component {
                     </Scroll>
                 </div>
             );
-    }
 }
 
 export default App
