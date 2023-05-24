@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/RoboFriendAppReactRedux/static/css/main.293c9e62.css",
-    "main.js": "/RoboFriendAppReactRedux/static/js/main.b3cae794.js",
-    "static/js/787.28cb0dcd.chunk.js": "/RoboFriendAppReactRedux/static/js/787.28cb0dcd.chunk.js",
-    "static/media/SEGA.woff": "/RoboFriendAppReactRedux/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
-    "index.html": "/RoboFriendAppReactRedux/index.html",
-    "main.293c9e62.css.map": "/RoboFriendAppReactRedux/static/css/main.293c9e62.css.map",
-    "main.b3cae794.js.map": "/RoboFriendAppReactRedux/static/js/main.b3cae794.js.map",
-    "787.28cb0dcd.chunk.js.map": "/RoboFriendAppReactRedux/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/RoboFriendAppReact/static/css/main.5e10d970.css",
+    "main.js": "/RoboFriendAppReact/static/js/main.541dfd99.js",
+    "static/js/787.28cb0dcd.chunk.js": "/RoboFriendAppReact/static/js/787.28cb0dcd.chunk.js",
+    "static/media/SEGA.woff": "/RoboFriendAppReact/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
+    "index.html": "/RoboFriendAppReact/index.html",
+    "main.5e10d970.css.map": "/RoboFriendAppReact/static/css/main.5e10d970.css.map",
+    "main.541dfd99.js.map": "/RoboFriendAppReact/static/js/main.541dfd99.js.map",
+    "787.28cb0dcd.chunk.js.map": "/RoboFriendAppReact/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.293c9e62.css",
-    "static/js/main.b3cae794.js"
+    "static/css/main.5e10d970.css",
+    "static/js/main.541dfd99.js"
   ]
 }
