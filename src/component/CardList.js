@@ -3,9 +3,6 @@ import Card from "./Card";
 
 
 const CardList = ({robots}) => {
-  /*  if(true){
-        throw new Error('Noooooo')
-    }*/
     return (
         <div>
             {
@@ -23,13 +20,4 @@ const CardList = ({robots}) => {
         </div>
     );
 }
-
 export default CardList;
-
-// If you would you like check Error Boundary - if it's work
-// - provide error by code:
-// const CardList = ({robots}) => {
-//     /*  if(true){
-//           throw new Error('Noooooo')
-//       }*/
-//     return (
